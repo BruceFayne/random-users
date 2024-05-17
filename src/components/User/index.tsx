@@ -1,4 +1,3 @@
-// User.tsx
 import React from 'react';
 import { User as IUser } from '../../redux/User/types';
 

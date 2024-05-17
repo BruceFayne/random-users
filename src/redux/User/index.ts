@@ -1,8 +1,6 @@
-// index.ts
 import axios from 'axios';
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { InitialState, User } from '../../redux/User/types'// User/index.ts
-
+import { InitialState, User } from '../../redux/User/types'
 
 export const fetchUsers = createAsyncThunk('User/fetchUsers', async () => {
   try {

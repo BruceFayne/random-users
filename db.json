@@ -1,0 +1,57 @@
+{"users": 
+    {
+      "gender": "female",
+      "name": {
+        "title": "Ms",
+        "first": "Faustine",
+        "last": "Morel"
+      },
+      "location": {
+        "street": {
+          "number": 6643,
+          "name": "Rue Pasteur"
+        },
+        "city": "Tourcoing",
+        "state": "La Réunion",
+        "country": "France",
+        "postcode": 34608,
+        "coordinates": {
+          "latitude": "-21.3697",
+          "longitude": "82.5410"
+        },
+        "timezone": {
+          "offset": "+2:00",
+          "description": "Kaliningrad, South Africa"
+        }
+      },
+      "email": "faustine.morel@example.com",
+      "login": {
+        "uuid": "6ba8afe8-46fe-4723-b321-a38396ed9344",
+        "username": "bigostrich307",
+        "password": "blackjac",
+        "salt": "A75Dho9m",
+        "md5": "dfb3f7feab844d2955d9c1ac45afe1bd",
+        "sha1": "0f47e591ef17a0d74c5d463518d206efa0dcf6de",
+        "sha256": "dfbfccf16fdc164976493eb1d44c593b0de8b9ec3946d3dee8affa45ed203653"
+      },
+      "dob": {
+        "date": "1975-04-06T15:06:55.942Z",
+        "age": 49
+      },
+      "registered": {
+        "date": "2006-06-16T09:02:25.030Z",
+        "age": 17
+      },
+      "phone": "03-88-62-22-23",
+      "cell": "06-61-68-80-19",
+      "id": {
+        "name": "INSEE",
+        "value": "2750353526607 86"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/54.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/54.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/54.jpg"
+      },
+      "nat": "FR"
+    }}

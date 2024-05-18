@@ -1,18 +1,17 @@
 import React, { useEffect } from 'react';
-import { useAppDispatch, useAppSelector } from '../../redux/store';
-import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
+import { AppDispatch, useAppDispatch, useAppSelector } from '../../redux/store';
+import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import { fetchUsers } from '../../redux/User/index';
-import User from '../../components/User';
 import { RootState } from '../../redux/store';
-
+import { User as IUser } from '../../redux/User/types';
+import User from '../../components/User';
 
 const Home = () => {
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
   const { users, loading, error } = useSelector((state: RootState) => state.User);
-  
 
   useEffect(() => {
-    dispatch(fetchUsers() as any);
+    dispatch(fetchUsers());
   }, [dispatch, fetchUsers]);
 
   if (loading) {
@@ -25,7 +24,7 @@ const Home = () => {
 
   return (
     <div>
-      {users.map((user: User) => (
+      {users.map((user: IUser) => (
         <User key={user.email} user={user} />
       ))}
     </div>

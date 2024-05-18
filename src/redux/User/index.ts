@@ -5,6 +5,7 @@ import { InitialState, User } from '../../redux/User/types'
 export const fetchUsers = createAsyncThunk('User/fetchUsers', async () => {
   try {
     const response = await axios.get<User[]>('http://localhost:3001/users');
+    console.log(response.data);
     return response.data;
   } catch (error) {
     throw error;

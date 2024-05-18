@@ -1,4 +1,5 @@
-{"users": 
+{
+  "users": [
     {
       "gender": "female",
       "name": {
@@ -54,4 +55,6 @@
         "thumbnail": "https://randomuser.me/api/portraits/thumb/women/54.jpg"
       },
       "nat": "FR"
-    }}
+    }
+  ]
+}

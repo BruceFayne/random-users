@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
+import './style.scss'
 import { AppDispatch, useAppDispatch, useAppSelector } from '../../redux/store';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import { fetchUsers } from '../../redux/User/index';
 import { RootState } from '../../redux/store';
 import { User as IUser } from '../../redux/User/types';
 import User from '../../components/User';
+import Search from '../../components/Search';
 
 const Home = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -15,7 +17,7 @@ const Home = () => {
   }, [dispatch, fetchUsers]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <div className='loading'>Loading...</div>;
   }
 
   if (error) {
@@ -23,10 +25,19 @@ const Home = () => {
   }
 
   return (
-    <div>
+    <div className="home">
+    <div className="header">
+    <Search />
+    <button className="refresh">Refresh Users</button>
+    </div>
+    <div className="main">
+    <div className='userList'>
       {users.map((user: IUser) => (
         <User key={user.email} user={user} />
       ))}
+    </div>
+    <div className="statistics"></div>
+    </div>
     </div>
   );
 };

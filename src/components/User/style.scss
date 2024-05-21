@@ -1,0 +1,117 @@
+.userCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 196px;
+    width: 332px;
+    padding: 20px;
+    margin: 0px 16px 16px 0px;
+    background-color: #1A1C23;
+    border: 1px solid transparent;
+    border-radius: 16px;
+
+    &:hover {
+        border: 1px solid #CF7B5A;
+      }
+    
+      &:hover .userCard__header__info__name {
+        color: #CF7B5A;
+      }
+    
+      &:hover .userCard__delete {
+        display: flex;
+      }
+
+    &__delete {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #CF7B5A;
+        border-radius: 0px 16px 0px 16px;
+        cursor: pointer;
+        position: absolute;
+        top: -1px;
+        left: 287px;
+        width: 44px;
+        height: 44px;
+
+    }
+
+    &__delete-icon {
+        height: 24px;
+        width: 24px;
+        font-weight: 28px;
+    }
+
+    
+
+    &__header {
+        height: 56px;
+        display: flex;
+        align-items: center;
+
+        &__photo {
+            width: 56px;
+            border-radius: 28px;
+        }
+
+        &__info {
+            width: 187px;
+            height: 52px;
+            margin-left: 16px;
+            font-family: "Jura", sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+                &__name {
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: #DCD8D3;
+                }
+
+                &__email {
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    color: #DCD8D3;
+                }
+
+        }
+    }
+
+    &__name {
+        font-family: "Jura", sans-serif;
+    }
+
+    &__info {
+        font-family: "Jura", sans-serif;
+        display: flex;
+        flex-direction: row;
+
+        &__titles {
+            line-height: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #8C8988;
+            width: 57px;
+            height: 84px;
+        }
+
+        &__subtitles {
+            line-height: 20px;
+            margin-left: 16px;
+            color: #DCD8D3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 12px;
+            height: 84px;
+        }
+    }
+}
+

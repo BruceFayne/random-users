@@ -10,7 +10,9 @@ export interface User {
   phone: string;
   dob: {
     date: string;
+    age: number;
   };
+  gender: "male" | "female";
   location: {
     city: string;
     state: string;

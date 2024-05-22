@@ -25,15 +25,14 @@ const User: React.FC<Props> = ({ user }) => {
       </div>
       </div>
       <div className="userCard__info">
-      <div className="userCard__info__titles">
-      <p>Phone No</p>
-      <p>Birthday</p>
-      <p>Adress</p>
+      <div className="userCard__info__phone">
+      <p className='title'>Phone No</p><p className='subtitle'>{user.phone}</p>
       </div>
-      <div className="userCard__info__subtitles">
-      <p>{user.phone}</p>
-      <p>{dob}</p>
-      <p>{`${city}, ${state}, ${country}`}</p>
+      <div className="userCard__info__dob">
+      <p className='title'>Birthday</p><p className='subtitle'>{dob}</p>
+      </div>
+      <div className="userCard__info__adress">
+      <p className='title'>Adress</p><p className='subtitle'>{`${city}, ${state}, ${country}`}</p>
       </div>
       </div>
     </div>

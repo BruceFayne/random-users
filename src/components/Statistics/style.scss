@@ -1,0 +1,65 @@
+.statistics {
+    padding: 20px;
+    position: fixed;
+    font-family: "Jura", sans-serif;
+    top: 110px;
+    right: 32px;
+    width: 332px;
+    height: 75%;
+    background-color: #1E2027;
+    border-radius: 16px;
+
+    &__total {
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        line-height: 24px;
+        color: #DCD8D3;
+        // margin-bottom: 24px;
+        border-bottom: 1px solid #303238;
+    }
+
+    &__gender {
+        height: 136px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 24px 0px 24px 0px;
+    }
+
+    &__age {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 232px;
+        padding: 24px 0px 24px 0px;
+        border-bottom: 1px solid #303238;
+
+        &__title {
+            font-size: 16px;
+            line-height: 20px;
+            color: #DCD8D3;
+        }
+
+        &__row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__subtitle {
+            width: 50px;
+            font-size: 12px;
+            line-height: 20px;
+            color: #8C8988;
+            margin-right: 20px;
+        }
+
+        &__count {
+            font-size: 14px;
+            line-height: 20px;
+            color: #DCD8D3;
+        }
+    }
+}
